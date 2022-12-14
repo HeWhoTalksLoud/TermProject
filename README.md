@@ -1,1 +1,1 @@
-# TermProject
+# TermProject - курсовая работа
