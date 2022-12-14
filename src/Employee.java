@@ -32,7 +32,7 @@ public class Employee {
 
     public void setDepartment(int department) {
         if (department < 1 || department > 5) {
-            throw new IllegalArgumentException("Номер департамента должен быть в диапазоне от 1 до 5");
+            throw new IllegalArgumentException("Номер отдела должен быть в диапазоне от 1 до 5");
         }
         this.department = department;
     }
@@ -46,5 +46,13 @@ public class Employee {
             throw new IllegalArgumentException("Значение зарплаты не может быть отрицательным");
         }
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "ФИО: " + fullName +
+                ", отдел " + department +
+                ", з/п: " + salary +
+                ", id: " + id;
     }
 }
